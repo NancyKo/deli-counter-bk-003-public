@@ -16,7 +16,10 @@ end
 def take_a_number(deli, person)
   if deli.empty?
     deli << person 
+    puts "Welcome, #{person}. You are number 1 in line."
+  elsif deli.length > 0
+    deli << person
+    puts "Welcome, #{person}. You are number #{deli.length} in line." 
   end
-    # puts Welcome, Ada. You are number 1 in line
 end 
-# line(["Logan", "Avi", "Spencer"])
+line(["Logan", "Avi", "Spencer"])
