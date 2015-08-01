@@ -22,4 +22,12 @@ def take_a_number(deli, person)
     puts "Welcome, #{person}. You are number #{deli.length} in line." 
   end
 end 
-line(["Logan", "Avi", "Spencer"])
+
+def now_serving(deli)
+  if deli.empty?
+    puts "There is nobody waiting to be served!"
+  elsif deli.count != 0
+    puts "Currently serving #{deli.shift}."
+  end
+end
+# line(["Logan", "Avi", "Spencer"])
